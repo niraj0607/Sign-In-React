@@ -1,0 +1,72 @@
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+button {
+  background-color: rgb(87, 137, 224);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #23578e;
+}
+
+h2 {
+  color: #333;
+}
+
+/* Styles for the modal overlay */
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 300ms ease-in-out;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+/* Styles for the modal content */
+.ReactModal__Content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  padding: 20px;
+  border: 1px solid #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Adjust the width as needed */
+  width: 100%;
+}
+
+#signInDiv {
+  margin-top: 20px;
+  max-width: 200px;
+  width: 100%;
+}
+
+#signInDiv button {
+  background-color: #edeff2; /* Google blue color */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+#signInDiv button:hover {
+  background-color: #94999e; /* Darker shade on hover */
+}
+
+button.closeButton {
+  background-color: #f44336;
+  margin-top: 10px;
+}
